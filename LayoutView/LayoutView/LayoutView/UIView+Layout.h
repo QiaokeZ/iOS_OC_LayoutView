@@ -1,6 +1,6 @@
 //
 //  UIView+layout.h
-//  UIView+layout <https://github.com/QiaokeZ/iOS_LayoutView>
+//  UIView+layout <https://github.com/QiaokeZ/iOS_OC_LayoutView>
 //
 //  Created by admin on 2019/3/16.
 //  Copyright © 2019 zhouqiao. All rights reserved.

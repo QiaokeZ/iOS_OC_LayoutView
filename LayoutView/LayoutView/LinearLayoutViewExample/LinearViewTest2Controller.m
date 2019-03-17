@@ -1,10 +1,4 @@
-//
-//  LinearViewTest2Controller.m
-//  LayoutView
-//
-//  Created by admin on 2019/3/17.
-//  Copyright © 2019 com.etraffic.EasyCharging. All rights reserved.
-//
+
 
 #import "LinearViewTest2Controller.h"
 #import "LinearLayoutView.h"

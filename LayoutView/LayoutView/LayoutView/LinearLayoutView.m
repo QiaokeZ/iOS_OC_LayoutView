@@ -1,6 +1,6 @@
 //
 //  LinearLayoutView.m
-//  LinearLayoutView <https://github.com/QiaokeZ/iOS_LayoutView>
+//  LinearLayoutView <https://github.com/QiaokeZ/iOS_OC_LayoutView>
 //
 //  Created by admin on 2019/3/16.
 //  Copyright © 2019 zhouqiao. All rights reserved.
