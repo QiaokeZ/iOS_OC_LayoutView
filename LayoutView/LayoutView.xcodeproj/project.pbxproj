@@ -16,6 +16,11 @@
 		84C7C7D3223E846300A33B22 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7CE223E846300A33B22 /* UIView+Layout.m */; };
 		84C7C7D4223E846300A33B22 /* RelativeLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7D0223E846300A33B22 /* RelativeLayoutView.m */; };
 		84C7C7D5223E846300A33B22 /* LinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7D2223E846300A33B22 /* LinearLayoutView.m */; };
+		84C7C7D9223E9E6F00A33B22 /* LinearLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7D8223E9E6F00A33B22 /* LinearLayoutViewController.m */; };
+		84C7C7DC223EA22200A33B22 /* LinearViewTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7DB223EA22200A33B22 /* LinearViewTest1Controller.m */; };
+		84C7C7DF223EA60700A33B22 /* LinearViewTest2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7DE223EA60700A33B22 /* LinearViewTest2Controller.m */; };
+		84C7C7E2223EAA1600A33B22 /* LinearViewTest3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7E1223EAA1600A33B22 /* LinearViewTest3Controller.m */; };
+		84C7C7E5223EAC4500A33B22 /* LinearViewTest4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C7E4223EAC4500A33B22 /* LinearViewTest4Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,16 @@
 		84C7C7D0223E846300A33B22 /* RelativeLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeLayoutView.m; sourceTree = "<group>"; };
 		84C7C7D1223E846300A33B22 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		84C7C7D2223E846300A33B22 /* LinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearLayoutView.m; sourceTree = "<group>"; };
+		84C7C7D7223E9E6F00A33B22 /* LinearLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearLayoutViewController.h; sourceTree = "<group>"; };
+		84C7C7D8223E9E6F00A33B22 /* LinearLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearLayoutViewController.m; sourceTree = "<group>"; };
+		84C7C7DA223EA22200A33B22 /* LinearViewTest1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearViewTest1Controller.h; sourceTree = "<group>"; };
+		84C7C7DB223EA22200A33B22 /* LinearViewTest1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearViewTest1Controller.m; sourceTree = "<group>"; };
+		84C7C7DD223EA60700A33B22 /* LinearViewTest2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearViewTest2Controller.h; sourceTree = "<group>"; };
+		84C7C7DE223EA60700A33B22 /* LinearViewTest2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearViewTest2Controller.m; sourceTree = "<group>"; };
+		84C7C7E0223EAA1600A33B22 /* LinearViewTest3Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearViewTest3Controller.h; sourceTree = "<group>"; };
+		84C7C7E1223EAA1600A33B22 /* LinearViewTest3Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearViewTest3Controller.m; sourceTree = "<group>"; };
+		84C7C7E3223EAC4500A33B22 /* LinearViewTest4Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearViewTest4Controller.h; sourceTree = "<group>"; };
+		84C7C7E4223EAC4500A33B22 /* LinearViewTest4Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearViewTest4Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +82,14 @@
 		84C7C7B5223E843D00A33B22 /* LayoutView */ = {
 			isa = PBXGroup;
 			children = (
+				84C7C7D6223E9E3200A33B22 /* LinearLayoutViewExample */,
 				84C7C7CC223E846300A33B22 /* LayoutView */,
 				84C7C7B6223E843D00A33B22 /* AppDelegate.h */,
 				84C7C7B7223E843D00A33B22 /* AppDelegate.m */,
 				84C7C7B9223E843D00A33B22 /* ViewController.h */,
 				84C7C7BA223E843D00A33B22 /* ViewController.m */,
+				84C7C7D7223E9E6F00A33B22 /* LinearLayoutViewController.h */,
+				84C7C7D8223E9E6F00A33B22 /* LinearLayoutViewController.m */,
 				84C7C7BC223E843D00A33B22 /* Main.storyboard */,
 				84C7C7BF223E843E00A33B22 /* Assets.xcassets */,
 				84C7C7C1223E843E00A33B22 /* LaunchScreen.storyboard */,
@@ -92,6 +110,21 @@
 				84C7C7CE223E846300A33B22 /* UIView+Layout.m */,
 			);
 			path = LayoutView;
+			sourceTree = "<group>";
+		};
+		84C7C7D6223E9E3200A33B22 /* LinearLayoutViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C7DA223EA22200A33B22 /* LinearViewTest1Controller.h */,
+				84C7C7DB223EA22200A33B22 /* LinearViewTest1Controller.m */,
+				84C7C7DD223EA60700A33B22 /* LinearViewTest2Controller.h */,
+				84C7C7DE223EA60700A33B22 /* LinearViewTest2Controller.m */,
+				84C7C7E0223EAA1600A33B22 /* LinearViewTest3Controller.h */,
+				84C7C7E1223EAA1600A33B22 /* LinearViewTest3Controller.m */,
+				84C7C7E3223EAC4500A33B22 /* LinearViewTest4Controller.h */,
+				84C7C7E4223EAC4500A33B22 /* LinearViewTest4Controller.m */,
+			);
+			path = LinearLayoutViewExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +198,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C7C7D3223E846300A33B22 /* UIView+Layout.m in Sources */,
+				84C7C7DC223EA22200A33B22 /* LinearViewTest1Controller.m in Sources */,
 				84C7C7BB223E843D00A33B22 /* ViewController.m in Sources */,
 				84C7C7D4223E846300A33B22 /* RelativeLayoutView.m in Sources */,
 				84C7C7D5223E846300A33B22 /* LinearLayoutView.m in Sources */,
+				84C7C7E2223EAA1600A33B22 /* LinearViewTest3Controller.m in Sources */,
+				84C7C7E5223EAC4500A33B22 /* LinearViewTest4Controller.m in Sources */,
+				84C7C7D9223E9E6F00A33B22 /* LinearLayoutViewController.m in Sources */,
 				84C7C7C6223E843E00A33B22 /* main.m in Sources */,
+				84C7C7DF223EA60700A33B22 /* LinearViewTest2Controller.m in Sources */,
 				84C7C7B8223E843D00A33B22 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

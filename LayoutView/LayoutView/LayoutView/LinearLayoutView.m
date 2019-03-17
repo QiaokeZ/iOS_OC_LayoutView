@@ -60,12 +60,11 @@
             }else{
                 view.frame = CGRectMake(0, 0, view.frame.size.width, ceil(MAX(view.lv_weight * (parentSize.height - surplusSize.height) / totalWeight, 0)));
             }
-        }else{
-            if ([view isKindOfClass:[LinearLayoutView class]]) {
-                [(LinearLayoutView *)view layout];
-            } else if ([view isKindOfClass:[RelativeLayoutView class]]) {
-                [(RelativeLayoutView *)view layout];
-            }
+        }
+        if ([view isKindOfClass:[LinearLayoutView class]]) {
+            [(LinearLayoutView *)view layout];
+        } else if ([view isKindOfClass:[RelativeLayoutView class]]) {
+            [(RelativeLayoutView *)view layout];
         }
     }
 }
@@ -116,7 +115,6 @@
                     break;
                 default: break;
             }
-            view.frame = CGRectMake(origin.x, origin.y, view.frame.size.width, view.frame.size.height);
         }else{
             origin.y = view.lv_margin + view.lv_marginTop + size.height;
             switch (self.contentGravity) {
@@ -147,18 +145,20 @@
                     break;
                 default: break;
             }
-            lastView = view;
         }
-        CGSize childTotalSize = CGSizeZero;
-        for (UIView *view in self.subviews){
-            if (self.direction == LinearLayoutDirectionHorizontal){
-                if (self.contentGravity == LinearLayoutContentGravityCenter){
-                    origin.x  = view.frame.origin.x + (self.frame.size.width - childTotalSize.width) / 2;
-                }
-            }else{
-                if (self.contentGravity == LinearLayoutContentGravityCenter){
-                    origin.y  = view.frame.origin.y + (self.frame.size.height - childTotalSize.height) / 2;
-                }
+        view.frame = CGRectMake(origin.x, origin.y, view.frame.size.width, view.frame.size.height);
+        lastView = view;
+    }
+    CGSize childTotalSize = [self getViewChildTotalSize:self];
+    for (UIView *view in self.subviews){
+        CGPoint origin = view.frame.origin;
+        if (self.direction == LinearLayoutDirectionHorizontal){
+            if (self.contentGravity == LinearLayoutContentGravityCenter){
+                origin.x = view.frame.origin.x + (self.frame.size.width - childTotalSize.width) / 2;
+            }
+        }else{
+            if (self.contentGravity == LinearLayoutContentGravityCenter){
+                origin.y = view.frame.origin.y + (self.frame.size.height - childTotalSize.height) / 2;
             }
         }
         view.frame = CGRectMake(origin.x, origin.y, view.frame.size.width, view.frame.size.height);
