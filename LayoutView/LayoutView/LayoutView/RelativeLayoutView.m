@@ -23,7 +23,6 @@
 }
 
 - (void)layout{
-    self.frame = CGRectZero;
     [self setChildViewSize];
     [self setChildViewOrigin];
     [self setLayoutViewFrame];
