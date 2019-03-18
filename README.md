@@ -1,7 +1,7 @@
 # LayoutView(仿Android布局)
+## 快速、简单、方便的UI布局框架
 ## 简书：https://www.jianshu.com/p/bc22145f4eaf
 ## swift版本：https://github.com/QiaokeZ/iOS_Swift_LayoutView
-## 快速、简单、方便的UI布局框架
 
 ### LinearLayoutView 使用
 
