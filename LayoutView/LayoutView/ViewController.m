@@ -2,6 +2,7 @@
 
 #import "ViewController.h"
 #import "LinearLayoutViewController.h"
+#import "RelativeLayoutViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) NSMutableArray *items;
@@ -14,6 +15,7 @@
     self.title = @"layoutView";
     self.items = [NSMutableArray array];
     [self.items addObject:@"LinearLayoutView"];
+    [self.items addObject:@"RelativeLayoutView"];
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"1234"];
@@ -38,6 +40,11 @@
     switch (indexPath.row) {
         case 0:{
             LinearLayoutViewController *vc = [[LinearLayoutViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:{
+            RelativeLayoutViewController *vc = [[RelativeLayoutViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

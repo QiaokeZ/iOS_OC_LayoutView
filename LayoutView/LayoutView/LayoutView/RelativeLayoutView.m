@@ -23,6 +23,7 @@
 }
 
 - (void)layout{
+    self.frame = CGRectZero;
     [self setChildViewSize];
     [self setChildViewOrigin];
     [self setLayoutViewFrame];
@@ -69,16 +70,16 @@
         if (view.lv_alignRight != nil){
             origin.x = CGRectGetMaxX(view.lv_alignRight.frame) - (view.frame.size.width + view.lv_margin + view.lv_marginLeft);
         }
-        if (view.lv_alignParent | LayoutAlignParentTop){
+        if (view.lv_alignParent & LayoutAlignParentTop){
             origin.y = view.lv_margin + view.lv_marginTop;
         }
-        if (view.lv_alignParent | LayoutAlignParentLeft){
+        if (view.lv_alignParent & LayoutAlignParentLeft){
             origin.x = view.lv_margin + view.lv_marginLeft;
         }
-        if (view.lv_alignParent | LayoutAlignParentBottom){
+        if (view.lv_alignParent & LayoutAlignParentBottom){
             origin.y = parentSize.height - (view.frame.size.height + view.lv_margin + view.lv_marginBottom);
         }
-        if (view.lv_alignParent | LayoutAlignParentRight){
+        if (view.lv_alignParent & LayoutAlignParentRight){
             origin.x = parentSize.width - (view.frame.size.width + view.lv_margin + view.lv_marginRight);
         }
         if (view.lv_gravity == LayoutGravityCenter){
