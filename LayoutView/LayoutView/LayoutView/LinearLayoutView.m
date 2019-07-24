@@ -88,9 +88,11 @@
         if (self.direction == LinearLayoutDirectionHorizontal){
             origin.x = view.lv_margin + view.lv_marginLeft + size.width;
             switch (self.contentGravity) {
-                case LinearLayoutContentGravityCenter:
                 case LinearLayoutContentGravityCenterVertical:
                     origin.y = ((self.frame.size.height - view.frame.size.height) / 2) + (view.lv_marginTop - view.lv_marginBottom);
+                    break;
+                case LinearLayoutContentGravityCenterHorizontal:
+                    origin.x = ((self.frame.size.width - view.frame.size.width) / 2) + (view.lv_marginLeft - view.lv_marginRight);
                     break;
                 case LinearLayoutContentGravityBottom:
                     origin.y = self.frame.size.height - view.frame.size.height - view.lv_margin - view.lv_marginBottom;
@@ -118,9 +120,11 @@
         }else{
             origin.y = view.lv_margin + view.lv_marginTop + size.height;
             switch (self.contentGravity) {
-                case LinearLayoutContentGravityCenter:
                 case LinearLayoutContentGravityCenterHorizontal:
                     origin.x = ((self.frame.size.width - view.frame.size.width) / 2) + (view.lv_marginLeft - view.lv_marginRight);
+                    break;
+                case LinearLayoutContentGravityCenterVertical:
+                    origin.y = ((self.frame.size.height - view.frame.size.height) / 2) + (view.lv_marginTop - view.lv_marginBottom);
                     break;
                 case LinearLayoutContentGravityBottom:
                     origin.x = self.frame.size.width - view.frame.size.width - view.lv_margin - view.lv_marginRight;
